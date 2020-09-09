@@ -1,5 +1,65 @@
-<h1>Index page</h1>
+<h1 class="ml-2 my-2" >Top Shelfs</h1>
 
-<% @books.each do |book|%>
-  <h4> <%= book.name %> <%= "⭐" * book.rating %> <h4>
-<% end %>
+<%= link_to 'Add Book ➕', new_book_path, class:'ml-3 mb-5 btn btn-primary' %>
+<%= link_to 'See this weeks top 5 selling books 🔥', books_bestsellers_path,data: { turbolinks: false }, class:'ml-3 mb-5 btn btn-success' %>
+
+<div class="">
+  <div class="row">
+    <div class="col-sm">
+       <h2 class="ml-2">5 Star Books</h2>
+      <div class="shelf five-shelf d-flex justify-content-between align-items-center m-1">
+      <% @five_star_books.each do |book|%>
+
+      <%= link_to (book) do %>
+        <div class="book">
+          <p> <%= book.name %><p>
+          <p> <%= book.auther %></p>
+        </div>
+       <% end %>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<div class="">
+  <div class="row">
+    <div class="col-sm">
+       <h2 class="ml-2" >4 Star Books</h2>
+      <div class="shelf four-shelf d-flex justify-content-between align-items-center m-1">
+      <% @four_star_books.each do |book|%>
+
+      <%= link_to (book) do %>
+        <div class="book">
+          <p> <%= book.name %><p>
+          <p> <%= book.auther %></p>
+        </div>
+       <% end %>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<div class="">
+  <div class="row">
+    <div class="col-sm">
+       <h2 class="ml-2">3 Star Books</h2>
+      <div class="shelf three-shelf d-flex justify-content-between align-items-center m-1">
+      <% @three_star_books.each do |book|%>
+
+      <%= link_to (book) do %>
+        <div class="book">
+          <p> <%= book.name %><p>
+          <p> <%= book.auther %></p>
+        </div>
+       <% end %>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+
+
+

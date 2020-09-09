@@ -1,0 +1,50 @@
+.nounderline {
+  text-decoration: none !important
+}
+
+ul{
+  list-style-type: none;
+}
+
+.book{
+    display: flex;
+    flex-direction: column;
+    min-width: 130px;
+    max-width: 130px;
+    min-height: 180px;
+    max-height: 180px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #1e2a78;
+    color: white;
+    padding: 8px;
+    margin: 20px;
+    border-right: 4px solid white;
+    border-top: 2px solid white;
+    transition: all 0.6s ease-in-out;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .shelf{
+    overflow-x: scroll;
+    width: 100%;
+    margin: 0, auto;
+    padding: 8px;
+    opacity: 0.8;
+    height: 33vh;
+    position: relative;
+  }
+
+  .five-shelf{
+    background-color: #ffd615;
+  }
+
+  .four-shelf{
+    background-color: #ff1f5a;
+  }
+
+  .three-shelf{
+    background-color: #f090d9;
+  }

@@ -1,0 +1,32 @@
+<div class="container add_book">
+  <div class="">
+    <div class="row justify-content-center">
+      <div class="col-md-3 d-flex">
+        <%= simple_form_for (@book) do |f| %>
+
+         <div class="form-col book-form">
+          <h2>Edit book</h2>
+          <div class="col my-1">
+            <%= f.label :name %>
+            <%= f.text_field :name %>
+          </div>
+
+          <div class="col my-1">
+            <%= f.label :auther %>
+            <%= f.text_field :auther %>
+          </div>
+
+          <div class="col my-1">
+            <%= f.label :rating %>
+            <%= f.number_field :rating %>
+           </div>
+
+            <div class="col my-3">
+              <%= f.submit %>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

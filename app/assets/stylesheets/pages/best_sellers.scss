@@ -1,0 +1,16 @@
+#best_sellers_list li{
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: left;
+width: 60%;
+p{
+  width: 70%;
+}
+}
+
+@media(max-width: 500px){
+  #best_sellers_list li{
+   width: 100%;
+  }
+}
